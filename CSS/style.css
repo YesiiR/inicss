@@ -1,0 +1,117 @@
+h2{
+    background-color: blue;
+    font-size: large;
+}
+p{
+    color: brown;
+}
+/*  Es un selector de ID*/
+#slec-id{
+    background-color: beige;
+}
+/*Es un selector de clase*/
+
+.sele-class{
+    background-color: blueviolet;
+}
+
+/*  Selectores avanzados
+Selectores de hijos y descendientes
+*/
+.sele-hijo-descen>li{
+     background-color: lightcoral;
+}
+/* Selector de descendecnia */
+.sele-hijo-descen b{
+    background-color: lightcoral;
+}
+.sele-descen b{
+    background-color: gold;
+}
+
+/* Selector de hermanos y adyacentes */
+.sele-herma  li{
+    background-color: chocolate;
+}
+.sele-adya + li{
+    background-color: darkslategrey;
+}
+
+/*Selectores de atributos*/
+.sele-atrib[target="_blank"]{
+    background-color: rgb(27, 158, 10);
+}
+.sele-atrib[href*="filmelier"]{
+    background-color: rgb(153, 10, 158);
+}
+.sele-atrib[href^="filmelier"]{
+    background-color: rgb(185, 101, 4);
+}
+.sele-atrib[href^="filmelier"]{
+    background-color: rgb(27, 158, 10);
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.sele-univ *{
+    background-color: aqua;
+}
+/* PSEUDO-CLASES */
+.pseudo-class-hover:hover{
+    color: cornflowerblue;
+}
+/* PSEUDO-CLASE ENLACE */
+
+.pseudo-clase-enlace:link{
+ color: red;
+}
+.pseudo-clase-enlace:visited{
+    color: deeppink;
+}
+.pseudo-clase-focus:focus{
+    border-radius: 100%;
+}
+/*PSEUDO ELEMENTOS*/
+.pseudo-elemento::after{
+    content: "ESTE ES UN AFTER";
+    background-color: rgb(185, 185, 10);
+}
+
+.pseudo-elemento::first-letter{
+    background-color: black;
+    color: yellow;
+    font-size: 60px;
+}
+.pseudo-elemento::selection{
+    background-color: blueviolet;
+}
+/* AGRUPACION DE SELECTORES */
+.nav, .main, .foot{
+    display: flex;
+    justify-content: center;
+}
+h1{
+ background-color: burlywood;
+}
+/*ESPECIFIDAD*/
+#primero{
+    background-color: blue;
+}
+.segundo{
+    background-color: coral;
+}
+/*HERENCIA*/
+.herencia>li p{
+    background-color: aqua;
+}
+/*MODELO DE CAJA*/
+.box{
+    background-color: aqua;
+    padding: 10px;
+    border: solid brown;
+    border-radius: 10px;
+    margin-left: 15px;
+
+}
