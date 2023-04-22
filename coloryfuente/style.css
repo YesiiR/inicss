@@ -1,0 +1,57 @@
+
+.clas_nav_cont{
+    border: solid 4px green;
+    min-width: 50%;
+    max-width: 120%;
+}
+.clas_nav_cont>a{
+    border: solid 2px rgb(184, 74, 23);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25%;
+    font-style: italic;
+    font-weight: 700;
+}
+/*SE VA A TRABAJAR CON EL CUERPO DEL DOCUMENTO*/
+.cuer_cont {
+    height: 130vh;
+    border: solid 2px palevioletred;
+    /*APLICANDO AL CONTENEDOR GLOBAL FLEX Y UBICAR LOS CAJONES*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+
+}
+.cuer_cont_cuer1, .cuer_cont_cuer2, .cuer_cont_cuer3, .cuer_cont_cuer4{
+    flex-basis: 33.3%;
+    width: 50%;
+    border: solid 2px darkgoldenrod;
+    min-height: 20%;
+    max-height: 100%;
+}
+.cuer_cont_cuer1 p{
+    color: aqua;
+    /*aplico el objeto tipografico*/
+    letter-spacing: 20px;
+}
+.cuer_cont_cuer2 p{
+    /*Espacio entre las palabras*/
+    word-spacing: 20px;
+    background-image: linear-gradient(red, green);
+}
+.cuer_cont_cuer3{
+    /*se establece color por palabras claves
+    -color: cornflowerblue;
+    -color: #0011aa;
+    -color: rgb(192, 74, 10);
+    -background-color: hsl(205, 60%, 90%);
+    -background-image: url(media/imgen.jpg);
+    */
+    background-color: hsl(205, 60%, 90%);
+    background-image: url(media/imgen.jpg);
+    background-image: linear-gradient(red, green);
+
+
+    
+}
